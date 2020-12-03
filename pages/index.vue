@@ -3,8 +3,14 @@
     <div>
       <Logo />
       <h1 class="title">
-        lb-a testing
+        lb-a
       </h1>
+      <h2 class="title">
+        testing
+      </h2>
+      <h2 class="title">
+        staging
+      </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
