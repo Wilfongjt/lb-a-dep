@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        lb-a a
+        lb-a test
       </h1>
       <div class="links">
         <a
