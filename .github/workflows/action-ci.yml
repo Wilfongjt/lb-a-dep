@@ -24,11 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the heroku deploy action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "lb-a" #Must be unique in Heroku
-          heroku_email: "wilfongjt@gmail.com"
           
       # install jest for testing
       - name: Install Jest
@@ -44,3 +39,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           npm run test
+          
+      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the heroku deploy action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "lb-a" #Must be unique in Heroku
+          heroku_email: "wilfongjt@gmail.com"
