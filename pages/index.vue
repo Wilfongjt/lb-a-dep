@@ -11,6 +11,9 @@
       <h2 class="title">
         staging
       </h2>
+      <h2 class="title">
+        eureka!
+      </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
